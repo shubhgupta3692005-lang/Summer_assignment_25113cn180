@@ -2,11 +2,11 @@
 int main()
 {
     int i , n, sum = 0;
-    printf("enter a number");
+    printf("Enter a number");
     scanf("%d",&n);
     for(i=1;i<=n;i++)
       sum = sum + i;
-      printf("the sum of the natural numbers are : ",sum);
+      printf("The sum of the natural numbers are : ",sum);
       return 0;
 }
 
