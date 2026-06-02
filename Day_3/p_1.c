@@ -1,19 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int n , i , x , flag = 0;
+    int n , i , flag = 1;
     printf("Enter a number to be checked");
     scanf("%d",&n);
-    x = n /2;
-    for(i=1;i<=x;i++)
+    for(i=2;i<=(n/2);i++)
     {
         if(n%i==0)
         {
-            flag++;
+            flag = 0;
             break;
         }
     }
-    if(flag == 0)
+    if(flag == 1)
     printf("%d is a prime number",n);
     else
     printf("Not a prime number");
